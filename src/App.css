@@ -1,0 +1,38 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 1rem 2rem 0 2rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+  .header-right {
+    gap: 1rem;
+  }
+  .header-nav {
+    display: none; 
+  }
+}
